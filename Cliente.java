@@ -1,5 +1,7 @@
 import java.io.*;
 import java.net.*;
+import java.util.Scanner;
+
 
 public class Cliente {
     int puerto = 6996;
@@ -29,12 +31,19 @@ public class Cliente {
             subida = new DataOutputStream(os);
 
             // COMIENZAN LOS MENSAJES
-            sube("Hola");
-            baja();
-            sube("Como estas?");
-            baja();
-            sube("Adios");
-            baja();
+            boolean dialogo = true;
+            String mensaje;
+            Scanner lee = new Scanner(System.in);
+            while (dialogo){
+                System.out.print("[Cliente] ");
+                mensaje = lee.nextLine();
+                sube(mensaje);
+                if (mensaje.equals("Adios")){
+                    dialogo=false;
+                }
+                baja();
+            }
+            lee.close();
 
             System.out.println("Cerrando conexion...");
             cierra();
@@ -48,7 +57,6 @@ public class Cliente {
         texto = "[Cliente] " + texto;
         try {
             subida.writeUTF(texto);
-            System.out.println(texto);
         } catch (IOException e) {
             System.out.println("Excepcion en sube(): " + e);
         }

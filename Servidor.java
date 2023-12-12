@@ -38,6 +38,8 @@ class Servidor {
                 } else if (mensaje.equals("[Cliente] Adios")) {
                     baja("Hasta luego");
                     dialogo = false;
+                } else {
+                    baja("Confirmada lectura");
                 }
             }
 
