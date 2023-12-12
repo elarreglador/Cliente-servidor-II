@@ -1,4 +1,4 @@
-![Imagen](https://github.com/elarreglador/Cliente-servidor/blob/main/SCREENSHOTS/Social%20preview.png)
+![Imagen](https://github.com/elarreglador/Cliente-servidor-II/blob/main/SCREENSHOTS/Social%20preview.png)
 
 
 ************************************
@@ -15,15 +15,17 @@ https://github.com/elarreglador
 ************************************
 ACERCA DE LA APLICACION
 ************************************
-Las clases cliente y servidor se conectan entre si por medio de sockets de este modo:
+Al igual que en la aplicacion cliente-servidor las clases cliente y servidor se conectan entre si por medio de sockets de este modo:
 
 - el cliente recibe como paremetro la ip del servidor (localhost si es la misma maquina), el servidor no recibe parametros
 - El cliente se conecta al servidor, le envia mensajes de texto y muestra los que recibe
 - El servidor acepta la conexion del cliente y muestra por pantalla los mensajes recibidos
 - Se establece un dialogo.
 
+En esta segunda parte de cliente-servidor, ademas, es posible escribir mensajes de teclado desde el cliente
 
-![Imagen](https://github.com/elarreglador/Cliente-servidor/blob/main/SCREENSHOTS/Captura%20de%20pantalla%20de%202023-12-12%2014-20-21.png)
+
+![Imagen](https://github.com/elarreglador/Cliente-servidor-II/blob/main/SCREENSHOTS/Captura%20de%20pantalla%20de%202023-12-12%2017-08-54.png)
 
 
 ************************************
@@ -51,7 +53,7 @@ java Cliente
 
 De este modo obtendremos algo similar a esto:
 
-![Imagen](https://github.com/elarreglador/Cliente-servidor/blob/main/SCREENSHOTS/Captura%20de%20pantalla%20de%202023-12-12%2014-21-57.png)
+![Imagen](https://github.com/elarreglador/Cliente-servidor-II/blob/main/SCREENSHOTS/Captura%20de%20pantalla%20de%202023-12-12%2017-10-37.png)
 
 
 
